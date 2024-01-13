@@ -7,13 +7,14 @@
         </div>
         <section class="section-card">
             <div class="row">
-                {{-- <div class="col" v-for="(product,index) in products" :key="index">
-                    <AppCard :series="product.series"  :thumb="product.thumb"/>
-                </div> --}}
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>nome serie</h3>
-                </div>
+                @foreach ($comics as $single_comics)
+                    <div class="col">
+                        <div class="card">
+                            <img src="{{$single_comics['thumb']}}" alt="">
+                            <h3>{{ $single_comics['series']}}</h3>
+                        </div>
+                    </div> 
+                @endforeach
             </div>
         </section>
         <div class="loadMore">

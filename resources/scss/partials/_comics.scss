@@ -15,6 +15,26 @@
     .col{
         width: calc( 100% / 6 );
         padding: 1rem;
+
+        .card {
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+            border: none;
+            img{
+                max-width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: top;
+            }
+    
+            h3{
+                margin-top: 5px;
+                text-align: center;
+                font-size: 1rem;
+                color: white;
+            }
+        }
     }
 
     .container{
@@ -59,24 +79,6 @@
                 color: white;
                 font-size: 1.2rem;
                 font-weight: bold;
-            }
-        }
-    }
-
-    .section-card{
-        .card {
-            height: 100%;
-            
-            img{
-                width: 100%;
-                aspect-ratio: 1;
-                object-fit: cover;
-                object-position: top;
-            }
-    
-            h3{
-                text-align: center;
-                font-size: 1rem;
             }
         }
     }
