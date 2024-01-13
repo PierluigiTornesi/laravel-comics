@@ -1,0 +1,43 @@
+//classi per l'header
+.header-b{
+    .logo-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 150px;
+        padding: 1rem;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+            gap: 0.4rem;
+
+            a{
+                padding: 4rem 1rem;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 0.9rem;
+                border: 3px solid white;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+
+                &:hover{
+                        color: #0282f9;
+                        border-bottom-color: #0282f9;
+                    }
+
+                    &.active{
+                        color: #0282f9;
+                        border-bottom-color: #0282f9;
+
+                    }
+            }
+        }
+    }
+}
